@@ -1,0 +1,88 @@
+<html>
+<title>A simple webpage</title>
+<style>
+	#menubar {
+	
+	}
+	ul{
+		background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+		background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+		background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		width:500px;
+		border-radius:5px;
+		padding:8px;
+		
+	}
+	
+	ul li{
+		display:inline;
+		position:relative;		
+		
+	}
+
+	li a{ 
+		text-decoration:none;
+		padding:7px;
+		margin:8px;
+	}
+	li a:hover{
+		background-color:green;
+		color:white;
+		padding:7px;
+		border-radius:5px;
+	}
+
+	ul li:hover > ul {
+		display:block;
+		position:absolute;
+		left:20px;
+		width:80px;
+	}
+	ul ul{
+		display:none;
+		margin-top:8px;
+	}
+	ul ul li{
+		display:block;		
+	}
+	ul ul li {
+		padding:7px;
+		border-radius:5px;
+	}
+	ul li:hover > ul li:hover{
+		background-color:green;
+		color:white;
+	
+	}
+</style>
+<body>
+	<div id='menubar'>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a>
+				<ul>
+					<li><href a="#">News</a></li>
+					<li><href a="#">Guestbook</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Animations</a>
+				<ul>
+					<li><href a="#">Fireworks</a></li>
+					<li><href a="#">Solar-system</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Games</a><ul>
+					<li><href a="#">Snake</a></li>
+					<li><href a="#">Slot
+					</a></li>
+				</ul>
+			</li>
+			<li><a href="#">About</a></li>
+		</ul>
+	<nav>
+	</div>
+</body>
+</html>
